@@ -1,0 +1,160 @@
+#root {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40vw;
+  height: 100vh;
+  padding-top: 5vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  color: var(--dark);
+  overflow: scroll;
+}
+#root::-webkit-scrollbar {
+  display: none;
+}
+
+.title {
+  margin-bottom: 2vh;
+  font-size: 3rem;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.task-input {
+  width: 100%;
+  margin-bottom: 2vh;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.task-input__label {
+  margin-bottom: 1vh;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.task-input__input {
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 2vh;
+  padding-left: 1vw;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--dark);
+  font-size: 1.25rem;
+}
+.task-input__submit {
+  padding: 1vh 1vw;
+  background: none;
+  border: 1px solid var(--dark);
+  outline: none;
+  border-radius: 10%;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.task-list {
+  width: 100%;
+}
+.task-list__num {
+  margin-bottom: 1vh;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.task-list__item {
+  width: 100%;
+  height: 4rem;
+  margin-bottom: 2vh;
+  padding: 0 2vw;
+  border: 1px solid var(--dark);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task-list__item__text {
+  font-size: 1.25rem;
+}
+.task-list__item__buttons {
+  display: flex;
+  gap: 1vw;
+}
+.task-list__item__buttons__button {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--dark);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.task-list__item__buttons__button--edit {
+  background: var(--blue);
+}
+.task-list__item__buttons__button--del {
+  background: var(--orange);
+}
+.task-list__item__edit-input {
+  height: 70%;
+}
+.task-list__item__edit-input input {
+  height: 90%;
+  margin-right: 2vw;
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--dark);
+  font-family: var(--font-family);
+  font-size: 1.25rem;
+}
+.task-list__item__edit-input button {
+  padding: 0.5rem 1vw;
+  background: none;
+  border: 1px solid var(--dark);
+  border-radius: 10px;
+  font-family: var(--font-family);
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-family);
+  overflow: hidden;
+}
+
+body {
+  height: 100vh;
+  background: var(--background);
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+:root {
+  --background: linear-gradient(
+    90deg,
+    rgba(255, 235, 190, 1) 0%,
+    rgba(161, 255, 157, 1) 50%,
+    rgba(249, 216, 149, 1) 100%
+  );
+  --blue: rgb(133, 248, 242);
+  --orange: rgb(255, 215, 142);
+  --dark: rgb(21, 24, 24);
+  --light: rgb(249, 255, 255);
+}
+
+:root {
+  --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

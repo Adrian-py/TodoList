@@ -1,0 +1,35 @@
+.task-input {
+  width: 100%;
+  margin-bottom: 2vh;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  &__label {
+    margin-bottom: 1vh;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  &__input {
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 2vh;
+    padding-left: 1vw;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--dark);
+    font-size: 1.25rem;
+  }
+
+  &__submit {
+    padding: 1vh 1vw;
+    background: none;
+    border: 1px solid var(--dark);
+    outline: none;
+    border-radius: 10%;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+}
